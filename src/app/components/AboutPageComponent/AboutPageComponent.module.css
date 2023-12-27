@@ -1,0 +1,120 @@
+.aboutSectionHeader {
+  background: linear-gradient(
+      rgba(29, 24, 66, 0.3) 0%,
+      rgba(29, 24, 66, 0.3) 100%
+    ),
+    url("../../public/image/AboutPageHeaderBackground.gif");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 1920px;
+  height: 976px;
+  flex-shrink: 0;
+}
+
+.aboutSectionHeaderTitle {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.aboutSectionHeaderText {
+  width: 1140px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.aboutSectionHeaderText p {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.valueSection {
+  background: #f7f5ff;
+}
+
+.valueTitleSection {
+  color: #1d1842;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.valueDetailsSection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.valueDetailsSection {
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.valueDetailSection {
+  display: inline-block;
+  padding: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  background: #efecfd;
+}
+
+.valueDetailHeaderSection {
+  color: #1d1842;
+  font-family: Montserrat;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 44px;
+}
+
+.valueDetailTextSection {
+  color: #5c5b68;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.missionSection {
+  width: 1920px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.missionHeaderSection {
+  color: #1d1842;
+  font-family: Montserrat;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.missionDetailsSection {
+  color: #1d1842;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.aboutCeoSection {
+  display: flex;
+}
