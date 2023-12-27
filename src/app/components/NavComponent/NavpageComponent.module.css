@@ -1,0 +1,19 @@
+.navSection {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navMenuSection {
+  gap: 16;
+}
+
+.navMenuSection ul {
+  display: flex;
+
+  text-decoration: none;
+  list-style: none;
+}
+
+.headerLinks {
+  gap: 16px;
+}

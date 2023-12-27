@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./ProgramPageComponent.module.css";
-import HeroPage from "../HeroComponent/HeroPageComponent";
+import HeroPage from "../NavComponent/NavPageComponent";
 import Button from "../Button/Button";
 import { Container } from "../Container/Container";
 

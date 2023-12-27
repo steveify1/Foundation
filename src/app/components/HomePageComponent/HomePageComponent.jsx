@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./HomePageComponent.module.css";
-import HeroPage from "../HeroComponent/HeroPageComponent";
+import NavPage from "../NavComponent/NavPageComponent";
 import Button from "../Button/Button";
 import { Container } from "../Container/Container";
 
@@ -11,7 +11,7 @@ export default function HomePage() {
   return (
     <main>
       <div className={styles.homePageSection}>
-        <HeroPage />
+        <NavPage />
         <Container className={styles.heroDetaiilsSection}>
           <div className={styles.foundationDetaiilsSection}>
             <h2>Welcome to [Foundation Name]</h2>

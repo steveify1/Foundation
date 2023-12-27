@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-import styles from "./HeropageComponent.module.css";
+import styles from "./NavpageComponent.module.css";
 
-export default function HeroPage() {
+export default function NavPage() {
   return (
     <main>
       <div className={styles.navSection}>
@@ -28,12 +28,3 @@ export default function HeroPage() {
     </main>
   );
 }
-// https://github.com/Nwakasi-Osita/Foundation.git
-
-// echo "# Foundation" >> README.md
-// git init
-// git add README.md
-// git commit -m "first commit"
-// git branch -M main
-// git remote add origin https://github.com/Nwakasi-Osita/Foundation.git
-// git push -u origin main
