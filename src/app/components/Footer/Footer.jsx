@@ -1,5 +1,4 @@
-import Image from "next/image";
-import styles from "./Footer.module.css";
+import styles from "./Footer.module.scss";
 import Button from "../Button/Button";
 import { Container } from "../Container/Container";
 
@@ -28,7 +27,6 @@ export default function Footer() {
 
                 <div className={styles.donationLinkSection}>
                   <Button>
-                    {" "}
                     <a href="">Donate</a>
                   </Button>
                 </div>

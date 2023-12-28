@@ -1,86 +1,70 @@
 .footerSection {
   background: #f7f5ff;
-
-  padding: 160px 100px 100px 100px;
+  padding: 100px 0px;
 }
+
 .footer {
-  display: inline-flex;
-  /* padding: 200px 100px 60px 100px; */
-  flex-direction: column;
-  align-items: flex-start;
+  display: grid;
   gap: 150px;
 }
 
 .footerHeader {
-  padding: 10px 0;
   color: #1d1842;
-  font-family: Montserrat;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 28px;
+  font-size: calc(1rem + 4px);
+  margin-bottom: 1rem;
 }
 
 .footerTopTierSection {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 1rem;
+  
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .donationSection {
   display: flex;
-  width: 560px;
   padding: 20px;
-
-  gap: 40px;
+  gap: 24px;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-start;
-  align-self: stretch;
-
   border-radius: 16px;
   background: #efecfd;
 }
 
-.donationTextSection {
-  gap: 1100px;
-}
-
 .donationSectionTitle {
   color: #1d1842;
-
-  font-family: Montserrat;
-  font-size: 28px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 44px;
+  margin-bottom: 1rem;
 }
 
 .donationDetailsSection {
   color: #5c5b68;
-
-  font-family: Montserrat;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 24px;
+  font-size: 1rem;
 }
 
 /* ///////FOOTER BOTTOMT TIER SECTION///////////// */
 .footerBottomTierSection {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  gap: calc(1rem + 8px);
+  
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  @media screen and (min-width: 1200px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .footerBottomTierSection h2 {
   color: #1d1842;
-
-  font-family: Montserrat;
-  font-size: 36px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 44px;
   word-spacing: 10px;
 }
 
@@ -88,14 +72,11 @@
   list-style: none;
   text-decoration: none;
   gap: 40px;
-
   padding: 7px 0;
 }
 
 .footerBottomTierSection ul li a {
   color: #5c5b68;
-
-  font-family: Montserrat;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -107,7 +88,6 @@
 .address {
   color: #5c5b68;
   padding: 7px 0;
-  font-family: Montserrat;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -122,7 +102,6 @@
 .SignUpDetailSubSection p {
   color: #5c5b68;
 
-  font-family: Montserrat;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -135,9 +114,7 @@
 
 .SignUpDetailHeaderSection h4 {
   color: #1d1842;
-
-  font-family: Montserrat;
-  font-size: 27px;
+  font-size: calc(1rem + 8px);
   font-style: normal;
   font-weight: 700;
   line-height: 28px;

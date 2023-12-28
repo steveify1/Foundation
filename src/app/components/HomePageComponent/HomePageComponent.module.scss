@@ -1,0 +1,308 @@
+.homePageSection {
+  background-color: #fff;
+}
+
+.heroDetaiilsSection {
+  display: grid;
+  padding: calc(24px + 1rem) 0px;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: auto;
+  // flex-direction: row-reverse;
+  text-align: center;
+  margin-bottom: 100px;
+
+  @media screen and (min-width: 768px) {
+    // grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.foundationDetaiilsSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.foundationDetaiilsSection h1 {
+  color: #1d1842;
+  // font-family: Montserrat;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 10px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 4rem;
+  }
+}
+
+.foundationDetaiilsSection p {
+  color: #1d1842;
+  /* padding: 0 500px; */
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+
+  /* width: 1000px; */
+}
+
+.learnMoreSection {
+  display: inline-block;
+  border-radius: 10px;
+}
+
+.learnMoreSection a {
+  color: #fff;
+}
+
+.heroImgSection {
+  // height: 24rem;
+  overflow: hidden;
+}
+
+.heroImgSection img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* /////////WHO WE ARE SECTION///////// */
+.whoWeAreSection {
+  display: grid;
+  padding: 100px 0px;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 100px !important;
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.whoWeAreDetailSection {
+  display: grid;
+  gap: 1rem;
+}
+
+.whoWeAreDetailSectionHeader h2 {
+  color: #1d1842;
+  font-size: 3rem;
+}
+
+.whoWeAreDetailLinksSection {
+  display: flex;
+}
+
+.whoWeAreDetailLinksSection ul {
+  text-decoration: dotted;
+  display: flex;
+  gap: 17px;
+}
+
+.whoWeAreDetailLinksSection ul li {
+  display: flex;
+}
+
+.whoWeAreDetailLinksSection ul li a {
+  color: #5c5b68;
+  font-size: 16px;
+}
+
+.whoWeAreImgSection {
+  width: 100%;
+}
+
+.whoWeAreImgSection img {
+  width: 100%;
+  object-fit: cover;
+}
+
+
+/* /////////END OF WHO WE ARE SECTION///////// */
+
+/* /////////PROGRAMS////////// */
+
+.ourProgram {
+  padding: 100px 0px;
+  background-color: #f7f5ff;
+}
+
+.ourProgramHeaderSection {
+  color: #1d1842;
+
+  // font-family: Montserrat;
+  font-size: 3rem;
+  // font-style: normal;
+  // font-weight: 600;
+  // line-height: 28px;
+  margin-bottom: 2rem;
+}
+
+
+.programsContainer {
+  display: grid;
+  gap: 2rem;
+  
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  @media screen and (min-width: 1200px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.programDetails {
+  padding: 10px 0px;
+}
+
+.programImg {
+  border-radius: 12px;
+}
+
+.programImg img {
+  width: 100%;
+  object-fit: cover;
+  -o-object-fit: cover;
+  transition: transform 1s ease-in-out;
+}
+
+.programImg:hover img {
+  transform: scale(1.05);
+}
+
+.ourProgramDetailSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+  height: 230px;
+}
+
+.ourProgramDetailSectionHeader h2 {
+  color: #1d1842;
+  font-size: calc(1rem + 4px);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.ourProgramDetailSection p {
+  color: #1d1842;
+  font-size: 0.9rem;
+  line-height: 24px;
+}
+
+/* ////////////TEAM SECTION///////// */
+.teamSectionHeader {
+  color: #1d1842;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.meetTheTeamSection {
+  padding: 100px 0px;
+}
+
+.team {
+  display: grid;
+  gap: 32px;
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    
+  }
+
+  @media screen and (min-width: 1200px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.teamPersonnel {
+  padding: calc(1rem + 4px);
+  border-radius: 16px;
+  background: #f7f5ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+.personnelImg {
+  height: 150px;
+  width: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.personnelImg img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.personnelName {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.personnelPosition {
+  color: #1d1842;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.personnelSocialMediaHandle {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0073b1;
+}
+
+.personnelSocialMediaHandle img {
+  width: 80%;
+  object-fit: cover;
+}
+
+
+/* ///////A LITTLE DETAIL ABOUT US///////// */
+
+.aLittleDetailAboutUs {
+  margin-bottom: 100px !important;
+}
+
+.ourThoughtsOnSecuritysection {
+  border-radius: 36px;
+  background: #1d1842;
+  padding: calc(48px + 1rem) 1rem !important;
+  color: #fff;
+
+  .ourThoughtsOnSecuritysectionHeader {
+    font-size: calc(1rem + 4px);
+    font-weight: 600;
+    opacity: 0.5;
+    margin-bottom: 1rem;
+  }
+  
+  .ourThoughtsOnSecuritySubSection {
+    font-size: 1rem;
+    font-weight: 800;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: calc(78px + 1rem) 8rem !important;
+  
+    .ourThoughtsOnSecuritySubSection {
+      font-size: 1.5rem;
+      font-weight: 800;
+    }
+  }
+}
+

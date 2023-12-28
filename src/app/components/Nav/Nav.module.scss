@@ -1,0 +1,17 @@
+.nav {
+  background-color: #000;
+  background: #1d1842;
+  color: #fff;
+  padding: 1.5rem 0px;
+}
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerLinks {
+  display: flex;
+  gap: 16px;
+}

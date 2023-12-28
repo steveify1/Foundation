@@ -1,6 +1,4 @@
-import Image from "next/image";
-import styles from "./Button.module.css";
-import { Children } from "react";
+import styles from "./Button.module.scss";
 
 export default function Button({ size, type, children }) {
   return (

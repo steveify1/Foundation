@@ -1,9 +1,9 @@
 .aboutSectionHeader {
   background: linear-gradient(
-      rgba(29, 24, 66, 0.3) 0%,
-      rgba(29, 24, 66, 0.3) 100%
+      rgba(29, 24, 66, 0.6) 0%,
+      rgba(29, 24, 66, 0.9) 100%
     ),
-    url("../../public/image/AboutPageHeaderBackground.gif");
+    url("../../../../public/images/c642d716035acf970de3c22ce168ce97.gif");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

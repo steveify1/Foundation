@@ -1,44 +1,105 @@
 import Image from "next/image";
 import Link from "next/link";
-import styles from "./HomePageComponent.module.css";
-import NavPage from "../NavComponent/NavPageComponent";
+import styles from "./HomePageComponent.module.scss";
+import Nav from "../Nav/Nav";
 import Button from "../Button/Button";
 import { Container } from "../Container/Container";
-
 import Footer from "../Footer/Footer";
+
+const teammates = [
+  {
+    name: "Mary Eniye Omozusi",
+    position: "CEO",
+    program: "EOF",
+    img: "images/mary-headshot.png",
+    socialMediaHandle: "https://www.linkedin.com/in/mary-omozusi-81b2b0277/",
+  },
+  {
+    name: "Nwakasi Stephen",
+    position: "IT Support",
+    program: "EOF",
+    img: "images/nwakasi-stephen-headshot.jpeg",
+    socialMediaHandle: "https://www.linkedin.com/in/stephen-nwakasi-402268163/",
+  },
+  {
+    name: "John Doe",
+    position: "Volunteer",
+    program: "The Girl Child Support",
+    img: "images/girl-support.png",
+    socialMediaHandle: "images/linkedin.png",
+  },
+  {
+    name: "John",
+    position: "Volunteer",
+    program: "The Girl Child Support",
+    img: "images/girl-support2.png",
+    socialMediaHandle: "images/linkedin.png",
+  },
+  {
+    name: "John",
+    position: "Volunteer",
+    program: "The Girl Child Support",
+    img: "images/girl-support.png",
+    socialMediaHandle: "images/linkedin.png",
+  },
+  {
+    name: "John",
+    position: "Volunteer",
+    program: "The Girl Child Support",
+    img: "images/girl-support2.png",
+    socialMediaHandle: "images/linkedin.png",
+  },
+  {
+    name: "John",
+    position: "Volunteer",
+    program: "The Girl Child Support",
+    img: "images/mary-headshot.png",
+    socialMediaHandle: "images/linkedin.png",
+  },
+  {
+    name: "John",
+    position: "Volunteer",
+    program: "The Girl Child Support",
+    img: "images/nwakasi-stephen-headshot.jpeg",
+    socialMediaHandle: "images/linkedin.png",
+  },
+]
 
 export default function HomePage() {
   return (
     <main>
+      <Nav />
       <div className={styles.homePageSection}>
-        <NavPage />
-        <Container className={styles.heroDetaiilsSection}>
-          <div className={styles.foundationDetaiilsSection}>
-            <h2>Welcome to [Foundation Name]</h2>
-            <p>
-              At [Foundation Name], we are driven by the belief that everyone
-              deserves a chance at a better life. Our foundation is dedicated to
-              uplifting the poor, supporting the needy, and empowering young
-              girls growing up on the streets. Through compassion, advocacy, and
-              action, we strive to create a positive impact on the lives of
-              those in need.
-            </p>
-          </div>
-          <div className={styles.learnMoreSection}>
-            {/* <p></p> */}
-            <Link href="/">
-              {" "}
-              <Button> Learn More</Button>
-            </Link>
-          </div>
-          <div className={styles.heroImgSection}>
-            <img src="images/heroImage.png" alt="" />
-          </div>
-        </Container>
+        <div  className={styles.heroDetaiilsSection}>
+          <Container className={styles.heroDetaiilsSection}>
+            <div className={styles.foundationDetaiilsSection}>
+              {/* <h1>Give life a purpose</h1> */}
+              <h1>Eniye Omozusi Foundation</h1>
+              <p>
+                At Eniye Omozusi Foundation, we are driven by the belief that everyone
+                deserves a chance at a better life. Our foundation is dedicated to
+                uplifting the poor, supporting the needy, and empowering young
+                girls growing up on the streets. Through compassion, advocacy, and
+                action, we strive to create a positive impact on the lives of
+                those in need.
+              </p>
+
+              <div className={styles.learnMoreSection}>
+                <Link href="/">
+                  {" "}
+                  <Button> Learn More</Button>
+                </Link>
+              </div>
+            </div>
+            <div className={styles.heroImgSection}>
+              <img src="images/heroImage.png" alt="" />
+            </div>
+          </Container>
+        </div>
 
         {/* /* /////////WHO WE ARE SECTION///////// */}
 
-        <Container className={styles.WhoWeAreSection}>
+        <Container className={styles.whoWeAreSection}>
           <div className={styles.whoWeAreDetailSection}>
             <div className={styles.whoWeAreDetailSectionHeader}>
               <h2>Who we are</h2>
@@ -54,15 +115,15 @@ export default function HomePage() {
                 </ul>
               </div>
             </div>
-            <div className={styles.ourPurposeDetailSection}>
-              <p>
-                We aim to break the cycle of poverty by providing comprehensive
-                support that addresses the unique challenges faced by
-                individuals and communities. From financial assistance to
-                educational opportunities, we are committed to making a lasting
-                difference.
-              </p>
-            </div>
+            
+            <p className={styles.ourPurposeDetailSection}>
+              We aim to break the cycle of poverty by providing comprehensive
+              support that addresses the unique challenges faced by
+              individuals and communities. From financial assistance to
+              educational opportunities, we are committed to making a lasting
+              difference.
+            </p>
+
             <div className={styles.aboutUsButtonSection}>
               <Link href="/">
                 {" "}
@@ -71,7 +132,7 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className={styles.WhoWeAreImgSection}>
+          <div className={styles.whoWeAreImgSection}>
             <img src="images/who-we-are.png" alt="" />
           </div>
         </Container>
@@ -200,176 +261,52 @@ export default function HomePage() {
         {/* //////////TEAM////////// */}
         <div className={styles.meetTheTeamSection}>
           <Container className={styles.teamSection}>
-            {" "}
             <div className={styles.teamSectionHeader}>
               <h4>Meet the team</h4>
             </div>
-            <div className={styles.team}>
-              <div className={styles.teamPersonnel}>
-                <div className={styles.personnelImg}>
-                  <img src="images/mary.png" alt="" />
-                </div>
-                <div className={styles.personnelName}>
-                  <h4>MARY ENIYE OMOZUSI</h4>
-                </div>
-                <div className={styles.personnelPosition}>
-                  <p>CEO</p>
-                </div>
-                <div className={styles.personnelSocialMediaHandle}>
-                  <Link href="/">
-                    {" "}
-                    <img src="images/LinkedIn svg.png" alt="" />
+
+            <ul className={styles.team}>
+              {teammates.map((teammate, i) => (
+                <li
+                  className={styles.teamPersonnel}
+                  key={`teammate-${i}`}
+                >
+                  <div className={styles.personnelImg}>
+                    <img src={teammate.img} alt={teammate.name} />
+                  </div>
+
+                  <div>
+                    <h4 className={styles.personnelName}>{teammate.name}</h4>
+                    <p className={styles.personnelPosition}>{teammate.position}</p>
+                  </div>
+              
+                  <Link href={teammate.socialMediaHandle} className={styles.personnelSocialMediaHandle}>
+                    <img src="images/linkedin.png" alt="" />
                   </Link>
-                </div>
-              </div>
-              {/* <-----TEAM personnel SECTION -------> */}
-              <div className={styles.teamPersonnel}>
-                <div className={styles.personnelImg}>
-                  <img src="images/girl support.png" alt="" />
-                </div>
-                <div className={styles.personnelName}>
-                  <h4>THE GIRL CHILD SUPPORT</h4>
-                </div>
-                <div className={styles.personnelPosition}>
-                  <p>VOLUNTEER</p>
-                </div>
-                <div className={styles.personnelSocialMediaHandle}>
-                  <Link href="/">
-                    {" "}
-                    <img src="images/LinkedIn svg.png" alt="" />
-                  </Link>
-                </div>
-              </div>
-              {/* <-----TEAM personnel SECTION -------> */}{" "}
-              <div className={styles.teamPersonnel}>
-                <div className={styles.personnelImg}>
-                  <img src="images/girl support.png" alt="" />
-                </div>
-                <div className={styles.personnelName}>
-                  <h4>THE GIRL CHILD SUPPORT</h4>
-                </div>
-                <div className={styles.personnelPosition}>
-                  <p>VOLUNTEER</p>
-                </div>
-                <div className={styles.personnelSocialMediaHandle}>
-                  <Link href="/">
-                    {" "}
-                    <img src="images/LinkedIn svg.png" alt="" />
-                  </Link>
-                </div>
-              </div>
-              {/* <-----TEAM personnel SECTION -------> */}
-              <div className={styles.teamPersonnel}>
-                <div className={styles.personnelImg}>
-                  <img src="images/mary.png" alt="" />
-                </div>
-                <div className={styles.personnelName}>
-                  <h4>THE GIRL CHILD SUPPORT</h4>
-                </div>
-                <div className={styles.personnelPosition}>
-                  <p>VOLUNTEER</p>
-                </div>
-                <div className={styles.personnelSocialMediaHandle}>
-                  <Link href="/">
-                    {" "}
-                    <img src="images/LinkedIn svg.png" alt="" />
-                  </Link>
-                </div>
-              </div>
-              {/* <-----TEAM personnel SECTION -------> */}
-              <div className={styles.teamPersonnel}>
-                <div className={styles.personnelImg}>
-                  <img src="images/girl support.png" alt="" />
-                </div>
-                <div className={styles.personnelName}>
-                  <h4>THE GIRL CHILD SUPPORT</h4>
-                </div>
-                <div className={styles.personnelPosition}>
-                  <p>VOLUNTEER</p>
-                </div>
-                <div className={styles.personnelSocialMediaHandle}>
-                  <Link href="/">
-                    {" "}
-                    <img src="images/LinkedIn svg.png" alt="" />
-                  </Link>
-                </div>
-              </div>
-              {/* <-----TEAM personnel SECTION -------> */}
-              <div className={styles.teamPersonnel}>
-                <div className={styles.personnelImg}>
-                  <img src="images/girl support2.png" alt="" />
-                </div>
-                <div className={styles.personnelName}>
-                  <h4>THE GIRL CHILD SUPPORT</h4>
-                </div>
-                <div className={styles.personnelPosition}>
-                  <p>VOLUNTEER</p>
-                </div>
-                <div className={styles.personnelSocialMediaHandle}>
-                  <Link href="/">
-                    {" "}
-                    <img src="images/LinkedIn svg.png" alt="" />
-                  </Link>
-                </div>
-              </div>
-              {/* <-----TEAM personnel SECTION -------> */}
-              <div className={styles.teamPersonnel}>
-                <div className={styles.personnelImg}>
-                  <img src="images/girl support2.png" alt="" />
-                </div>
-                <div className={styles.personnelName}>
-                  <h4>THE GIRL CHILD SUPPORT</h4>
-                </div>
-                <div className={styles.personnelPosition}>
-                  <p>VOLUNTEER</p>
-                </div>
-                <div className={styles.personnelSocialMediaHandle}>
-                  <Link href="/">
-                    {" "}
-                    <img src="images/LinkedIn svg.png" alt="" />
-                  </Link>
-                </div>
-              </div>
-              {/* <-----TEAM personnel SECTION -------> */}
-              <div className={styles.teamPersonnel}>
-                <div className={styles.personnelImg}>
-                  <img src="images/mary.png" alt="" />
-                </div>
-                <div className={styles.personnelName}>
-                  <h4>THE GIRL CHILD SUPPORT</h4>
-                </div>
-                <div className={styles.personnelPosition}>
-                  <p>VOLUNTEER</p>
-                </div>
-                <div className={styles.personnelSocialMediaHandle}>
-                  <Link href="/">
-                    {" "}
-                    <img src="images/LinkedIn svg.png" alt="" />
-                  </Link>
-                </div>
-              </div>
-            </div>
+                </li>
+              ))}
+            </ul>
           </Container>
         </div>
 
         {/* ///////A LITTLE DETAIL ABOUT US///////// */}
 
-        <div className={styles.aLittleDetailAboutUs}>
-          <Container className={styles.ourThoughtsOnSecuritysection}>
+        <Container className={styles.aLittleDetailAboutUs}>
+          <div className={styles.ourThoughtsOnSecuritysection}>
             <div className={styles.ourThoughtsOnSecurityDetailsection}>
               <div className={styles.ourThoughtsOnSecuritysectionHeader}>
                 <h4>Secure and Transparent Commitment</h4>
               </div>
               <div className={styles.ourThoughtsOnSecuritySubSection}>
                 <h2>
-                  At [Foundation Name], we prioritize security and truth. Your
+                  At the Eniye Omozusi Foundation, we prioritize security and truth. Your
                   support is built on trust, honesty, and a commitment to making
                   a positive impact.
                 </h2>
               </div>
             </div>
-          </Container>
-        </div>
+          </div>
+        </Container>
 
         <Footer />
 
