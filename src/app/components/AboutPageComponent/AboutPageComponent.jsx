@@ -137,14 +137,14 @@ export default function AboutPage() {
               <div className={styles.aboutCeoDetailSection}>
                 {" "}
                 <p>
-                  Meet [CEO's Full Name], the visionary leader at the helm of
+                  Meet [CEO&apos;s Full Name], the visionary leader at the helm of
                   [Foundation Name]. With a passion for social impact and a
-                  wealth of experience in [relevant field or industry], [CEO's
+                  wealth of experience in [relevant field or industry], [CEO&apos;s
                   Last Name] brings a dynamic and forward-thinking approach to
                   our foundation.{" "}
                 </p>{" "}
                 <p>
-                  [CEO's Last Name]'s journey with [Foundation Name] began
+                  [CEO&apos;s Last Name]&apos;s journey with [Foundation Name] began
                   [mention the starting year] when they joined as [position].
                   Over the years, their steadfast dedication and innovative
                   strategies played a pivotal role in steering the organization
@@ -153,26 +153,26 @@ export default function AboutPage() {
                 </p>{" "}
                 <p>
                   Guided by a deep sense of empathy and a commitment to
-                  transparency, [CEO's Last Name] ensures that [Foundation Name]
+                  transparency, [CEO&apos;s Last Name] ensures that [Foundation Name]
                   operates with the highest standards of integrity. Their
                   leadership philosophy revolves around inclusivity,
                   collaboration, and the belief that collective efforts can lead
                   to profound societal transformation{" "}
                 </p>{" "}
                 <p>
-                  Under [CEO's Last Name]'s guidance, [Foundation Name] has
+                  Under [CEO&apos;s Last Name]&apos;s guidance, [Foundation Name] has
                   expanded its reach and impact, implementing strategic
                   initiatives that address the complex challenges faced by the
-                  less fortunate. [CEO's Last Name] envisions a future where
+                  less fortunate. [CEO&apos;s Last Name] envisions a future where
                   [Foundation Name] continues to be a beacon of hope, inspiring
                   others to join the journey toward a more equitable world.{" "}
                 </p>{" "}
                 <p>
                   With a dedication to the core values of [Foundation
-                  Name],[CEO's Last Name] leads by example, embodying the
+                  Name],[CEO&apos;s Last Name] leads by example, embodying the
                   principles of compassion, resilience, and a steadfast
                   commitment to making a positive impact. As we forge ahead,
-                  guided by [CEO's LastName]'s visionary leadership, [Foundation
+                  guided by [CEO&apos;s LastName]&apos;s visionary leadership, [Foundation
                   Name] remains committed to empowering lives and creating hope
                   under their capable guidance.{" "}
                 </p>{" "}
