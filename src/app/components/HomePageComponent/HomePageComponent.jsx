@@ -182,7 +182,7 @@ export default function HomePage() {
                 <div className={styles.programDetails}>
                   <div className={styles.ourProgramDetailSection}>
                     <div className={styles.ourProgramDetailSectionHeader}>
-                      <h2>PRISON FAIR</h2>
+                      <h2>PRISON FARE</h2>
                     </div>
                     <div className={styles.ourProgramDetailSection}>
                       <p>

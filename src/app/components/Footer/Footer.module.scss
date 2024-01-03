@@ -82,7 +82,6 @@
   font-weight: 500;
   line-height: normal;
   text-decoration-line: underline;
-  text-transform: capitalize;
 }
 
 .address {
@@ -121,16 +120,22 @@
 }
 
 .SignUpDetailEmailSection {
-  display: flex;
-  gap: 30px;
+  display: grid;
+  gap: 0.5rem;
+
+  .signUpButtonSection {
+    display: block;
+    button {
+    width: 100%;
+      display: block;
+    }
+  }
 }
 
 .SignUpDetailEmailSection input {
   padding: 22px;
   align-items: center;
-
   border-radius: 12px;
   border: 1px solid #c8c8c8;
-
   background: #f7f5ff;
 }

@@ -1,6 +1,7 @@
 import styles from "./Footer.module.scss";
 import Button from "../Button/Button";
 import { Container } from "../Container/Container";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -87,7 +88,7 @@ export default function Footer() {
                     </li>
 
                     <li>
-                      <a href="">Prison fair</a>
+                      <a href="">Prison fare</a>
                     </li>
 
                     <li>
@@ -120,22 +121,39 @@ export default function Footer() {
               <div className={styles.contactMenuContainer}>
                 <ul>
                   <li>
-                    <a href="">+234 703 903 4376</a>
-                  </li>
-
-                  <li>
-                    <a href="">tim.jennings@example.com</a>
-                  </li>
-
-                  <li>
-                    <a href="">LinkedIn</a>
+                    <Link href="tel:+2347039034376">+234 703 903 4376</Link>
                   </li>
                   <li>
-                    <a href="">X(Twitter)</a>
+                    <Link
+                      href="mailto:theeniyeomozusifoundation@gmail.com"
+                    >
+                      theeniyeomozusifoundation@gmail.com
+                    </Link>
                   </li>
                   <li>
-                    <a href="">Instagram</a>
+                    <Link
+                      href="https://www.linkedin.com/company/the-eniye-omozusi-foundation/"
+                      target="_blank"
+                    >
+                      LinkedIn
+                    </Link>
                   </li>
+                  <li>
+                    <Link
+                      href="https://twitter.com/ENIYEFOUNDATION"
+                      target="_blank"
+                    >
+                      X (Twitter)
+                    </Link>
+                  </li>
+                  {/* <li>
+                    <Link
+                      href="https://www.linkedin.com/company/the-eniye-omozusi-foundation/"
+                      target="_blank"
+                    >
+                      Instagram
+                    </Link>
+                  </li> */}
                 </ul>
               </div>
             </div>
@@ -150,7 +168,7 @@ export default function Footer() {
                   </p>
                 </div>
                 <div className={styles.SignUpDetailHeaderSection}>
-                  <h4>Sign up for our newsletter</h4>
+                  <h5>Sign up for our newsletter</h5>
                 </div>
 
                 <div className={styles.SignUpDetailEmailSection}>
