@@ -8,15 +8,9 @@
   gap: 2rem;
   max-width: 1200px;
   margin: auto;
-  // flex-direction: row-reverse;
   text-align: center;
   margin-bottom: 100px;
-
-  @media screen and (min-width: 768px) {
-    // grid-template-columns: repeat(2, 1fr);
-  }
 }
-
 .foundationDetaiilsSection {
   display: flex;
   flex-direction: column;
@@ -25,14 +19,14 @@
 
 .foundationDetaiilsSection h1 {
   color: #1d1842;
-  // font-family: Montserrat;
   font-size: 3rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   margin-bottom: 10px;
-
-  @media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 768px) {
+  .foundationDetaiilsSection h1 {
     font-size: 4rem;
   }
 }
@@ -44,7 +38,6 @@
   font-style: normal;
   font-weight: 400;
   line-height: 28px;
-
   /* width: 1000px; */
 }
 
@@ -58,13 +51,13 @@
 }
 
 .heroImgSection {
-  // height: 24rem;
   overflow: hidden;
 }
 
 .heroImgSection img {
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /* /////////WHO WE ARE SECTION///////// */
@@ -74,8 +67,9 @@
   align-items: flex-start;
   gap: 40px;
   margin-bottom: 100px !important;
-
-  @media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 768px) {
+  .whoWeAreSection {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -95,7 +89,8 @@
 }
 
 .whoWeAreDetailLinksSection ul {
-  text-decoration: dotted;
+  -webkit-text-decoration: dotted;
+          text-decoration: dotted;
   display: flex;
   gap: 17px;
 }
@@ -117,13 +112,12 @@
 
 .whoWeAreImgSection img {
   width: 70%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /* /////////END OF WHO WE ARE SECTION///////// */
-
 /* /////////PROGRAMS////////// */
-
 .ourProgram {
   padding: 100px 0px;
   background-color: #f7f5ff;
@@ -131,24 +125,21 @@
 
 .ourProgramHeaderSection {
   color: #1d1842;
-
-  // font-family: Montserrat;
   font-size: 3rem;
-  // font-style: normal;
-  // font-weight: 600;
-  // line-height: 28px;
   margin-bottom: 2rem;
 }
 
 .programsContainer {
   display: grid;
   gap: 2rem;
-
-  @media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 768px) {
+  .programsContainer {
     grid-template-columns: repeat(2, 1fr);
   }
-
-  @media screen and (min-width: 1200px) {
+}
+@media screen and (min-width: 1200px) {
+  .programsContainer {
     grid-template-columns: repeat(4, 1fr);
   }
 }
@@ -208,12 +199,14 @@
 .team {
   display: grid;
   gap: 32px;
-
-  @media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 768px) {
+  .team {
     grid-template-columns: repeat(2, 1fr);
   }
-
-  @media screen and (min-width: 1200px) {
+}
+@media screen and (min-width: 1200px) {
+  .team {
     grid-template-columns: repeat(4, 1fr);
   }
 }
@@ -238,7 +231,8 @@
 
 .personnelImg img {
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .personnelName {
@@ -267,11 +261,11 @@
 
 .personnelSocialMediaHandle img {
   width: 80%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /* ///////A LITTLE DETAIL ABOUT US///////// */
-
 .aLittleDetailAboutUs {
   margin-bottom: 100px !important;
 }
@@ -281,25 +275,23 @@
   background: #1d1842;
   padding: calc(48px + 1rem) 1rem !important;
   color: #fff;
-
-  .ourThoughtsOnSecuritysectionHeader {
-    font-size: calc(1rem + 4px);
-    font-weight: 600;
-    opacity: 0.5;
-    margin-bottom: 1rem;
-  }
-
-  .ourThoughtsOnSecuritySubSection {
-    font-size: 1rem;
-    font-weight: 800;
-  }
-
-  @media screen and (min-width: 768px) {
+}
+.ourThoughtsOnSecuritysection .ourThoughtsOnSecuritysectionHeader {
+  font-size: calc(1rem + 4px);
+  font-weight: 600;
+  opacity: 0.5;
+  margin-bottom: 1rem;
+}
+.ourThoughtsOnSecuritysection .ourThoughtsOnSecuritySubSection {
+  font-size: 1rem;
+  font-weight: 800;
+}
+@media screen and (min-width: 768px) {
+  .ourThoughtsOnSecuritysection {
     padding: calc(78px + 1rem) 8rem !important;
-
-    .ourThoughtsOnSecuritySubSection {
-      font-size: 1.5rem;
-      font-weight: 800;
-    }
+  }
+  .ourThoughtsOnSecuritysection .ourThoughtsOnSecuritySubSection {
+    font-size: 1.5rem;
+    font-weight: 800;
   }
 }

@@ -1,9 +1,19 @@
+import Image from "next/image";
+import Link from "next/link";
+import Nav from "../Nav/Nav";
+import Button from "../Button/Button";
+import { Container } from "../Container/Container";
+import Footer from "../Footer/Footer";
+import Highlight from "../Highlight/Highlight";
+
 import styles from "./GirlChildComponent.module.css";
 
-export default function ProgramNav() {
+export default function GirlChild() {
   return (
     <div className={styles.programSection}>
-      <div className={styles.programHeroSection}>
+      {" "}
+      <Nav />
+      <Container className={styles.programHeroSection}>
         <div className={styles.programHeroTextSection}>
           <div className={styles.programHeroHeaderSection}>
             <h2>The girl child support Programs</h2>
@@ -21,14 +31,13 @@ export default function ProgramNav() {
           </div>
           <div className={styles.programHeroButton}>
             {" "}
-            <button>Learn more</button>
+            <Button>Learn more</Button>
           </div>
         </div>
         <div className={styles.programHeroImgSection}>
-          <img src="image/girl.png" />
+          <img src="images/girl.png" />
         </div>
-      </div>
-
+      </Container>
       {/* ////////////HOW WE HELP////////// */}
       <div className={styles.howWeHelpSection}>
         <div className={styles.howWeHelpDetailSection}>
@@ -79,6 +88,27 @@ export default function ProgramNav() {
           </div>
         </div>
       </div>
+      {/* /////////////OUR MISSION//////////////// */}
+      <Container className={styles.ourMission}>
+        <div className={styles.ourMissionsection}>
+          <div className={styles.ourMissionDetailsection}>
+            <div className={styles.ourMissionsectionHeader}>
+              <h4>Together, Let&apos;s Empower Dreams</h4>
+            </div>
+            <div className={styles.ourMissionSubSection}>
+              <h2>
+                The journey toward gender equality begins with supporting the
+                dreams of every girl. Join us in creating a world where
+                opportunities are limitless, and every girl can reach her full
+                potential. Together, let&apos;s empower dreams and build a
+                brighter future for all.
+              </h2>
+            </div>
+          </div>
+        </div>
+      </Container>
+      <Highlight />
+      <Footer />
     </div>
   );
 }

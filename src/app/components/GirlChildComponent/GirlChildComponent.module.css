@@ -1,24 +1,32 @@
 .programHeroSection {
-  display: flex;
-  width: 1820px;
-  /* padding: 160px 245px; */
+  display: grid;
+  padding: 100px 0px;
+  align-items: flex-start;
+  gap: 70px;
   align-items: center;
-  gap: 40px;
+}
+@media screen and (min-width: 768px) {
+  .programHeroSection {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.programHeroSection .programHeroTextSection {
+  display: grid;
+  gap: 1rem;
+}
+.programHeroSection img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .programHeroHeaderSection h2 {
   color: #1d1842;
+  font-size: 3rem;
   font-family: Montserrat;
-  font-size: 56px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-}
-
-.programHeroImgSection img {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .programHeroSubSection p {
@@ -73,4 +81,34 @@
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
+}
+
+.ourMission {
+  margin-bottom: 100px !important;
+}
+
+.ourMissionsection {
+  border-radius: 36px;
+  background: #1d1842;
+  padding: calc(48px + 1rem) 1rem !important;
+  color: #fff;
+}
+.ourMissionsection .ourMissionsectionHeader {
+  font-size: calc(1rem + 4px);
+  font-weight: 600;
+  opacity: 0.5;
+  margin-bottom: 1rem;
+}
+.ourMissionsection .ourMissionSubSection {
+  font-size: 1rem;
+  font-weight: 800;
+}
+@media screen and (min-width: 768px) {
+  .ourMissionsection {
+    padding: calc(78px + 1rem) 8rem !important;
+  }
+  .ourMissionsection .ourMissionSubSection {
+    font-size: 1.5rem;
+    font-weight: 800;
+  }
 }

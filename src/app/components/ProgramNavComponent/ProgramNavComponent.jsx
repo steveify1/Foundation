@@ -7,7 +7,7 @@ export default function ProgramNav() {
     <div className={styles.programNavContainer}>
       <ul className={styles.programNavLinks}>
         <li>
-          <Link href="/" className={styles.programNavLink}>
+          <Link href="/girl-child" className={styles.programNavLink}>
             <div className={styles.sectionName}>
               The girl child support Programs{" "}
             </div>
