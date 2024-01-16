@@ -1,15 +1,23 @@
 .aboutSectionHeader {
   background: linear-gradient(
-      rgba(29, 24, 66, 0.6) 0%,
-      rgba(29, 24, 66, 0.9) 100%
+      rgba(29, 24, 66, 0.3) 0%,
+      rgba(29, 24, 66, 0.3) 100%
     ),
-    url("../../../../public/images/c642d716035acf970de3c22ce168ce97.gif");
+    url("../../../../public/images/AboutPageHeaderBackground.gif");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   width: 1920px;
   height: 976px;
   flex-shrink: 0;
+}
+
+.aboutSectionContainer {
+  display: inline-flex;
+  padding: 200px 100px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
 }
 
 .aboutSectionHeaderTitle {
@@ -38,7 +46,12 @@
 }
 
 .valueSection {
-  background: #f7f5ff;
+  background-color: #f7f5ff;
+  display: inline-flex;
+  padding: 200px 100px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
 }
 
 .valueTitleSection {
@@ -90,6 +103,12 @@
 }
 
 .missionSection {
+  background-color: #fff;
+  display: inline-flex;
+  padding: 200px 100px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
   width: 1920px;
   justify-content: center;
   align-items: center;
@@ -115,6 +134,40 @@
   line-height: 28px;
 }
 
+/* /////ABOUT OUR CEO///// */
+
 .aboutCeoSection {
   display: flex;
+  width: 1920px;
+  padding: 100px;
+  align-items: center;
+  gap: 40px;
+  background: #f7f5ff;
+}
+
+.aboutCeoHeaderSection {
+  color: #1d1842;
+
+  font-family: Montserrat;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px;
+}
+
+.aboutCeoDetailSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  flex: 1 0 0;
+}
+
+.aboutCeoDetailSection {
+  color: #1d1842;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
 }

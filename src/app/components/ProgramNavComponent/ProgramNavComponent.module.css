@@ -1,0 +1,21 @@
+.programNavContainer {
+  background-color: #fff;
+}
+.programNavContainer .programNavLinks {
+  background-color: #fff;
+}
+.programNavContainer .programNavLinks .programNavLink {
+  display: flex;
+  padding: 16px 24px;
+  justify-content: space-between;
+  align-items: center;
+}
+.programNavContainer .programNavLinks .programNavLinkImage {
+  width: 44px;
+  height: 44px;
+}
+.programNavContainer .programNavLinks .programNavLinkImage img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
