@@ -1,0 +1,31 @@
+.HighlightSection {
+  background-color: #fff;
+
+  display: grid;
+  padding: calc(24px + 1rem) 0px;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.HighlightDetailsSection {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.HighlightHeaderSection {
+  color: #1d1842;
+  font-family: Montserrat;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px;
+}
+
+.HighlightDetailsSection {
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
