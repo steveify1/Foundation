@@ -1,0 +1,94 @@
+.EventSectionContainer {
+  background: #f7f5ff;
+}
+
+.EventDetailSectionContainer {
+  display: grid;
+  background: #f7f5ff;
+  padding: 100px 0px;
+  gap: 24px;
+  .EventDetailHeaderSectionContainer {
+    color: #1d1842;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+  }
+
+  .EventDetailsSection {
+    display: grid;
+    gap: 2rem;
+
+    @media screen and (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (min-width: 1200px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .EventDetailSection {
+      display: grid;
+      // width: 560px;
+      padding: 20px;
+      align-items: center;
+      // flex-direction: column;
+      gap: 24px;
+      // flex-shrink: 0;
+      // align-self: stretch;
+      // border-radius: 24px;
+      // background: #efecfd;
+      border-radius: 24px;
+      background: #efecfd;
+    }
+
+    .EventDetailImageSection {
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .EventDetailedTextSection {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .EventDetailedHeaderSection {
+      color: #1d1842;
+      font-family: Montserrat;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 28px;
+    }
+    .EventDetailedSubSection {
+      color: #5c5b68;
+      font-family: Montserrat;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 24px;
+    }
+    .EventDetailedDateAndLocationSection {
+      display: flex;
+      justify-content: space-between;
+      color: #1d1842;
+      font-family: Montserrat;
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 28px;
+    }
+    .EventDetailedButtonSection {
+      display: flex;
+      align-items: center;
+      // justify-content: center;
+      justify-content: space-between;
+    }
+  }
+  .volunteerButton {
+    background: blue;
+  }
+}

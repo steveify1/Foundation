@@ -1,0 +1,83 @@
+.EventSectionContainer {
+  background: #f7f5ff;
+}
+
+.EventDetailSectionContainer {
+  display: grid;
+  background: #f7f5ff;
+  padding: 100px 0px;
+  gap: 24px;
+}
+.EventDetailSectionContainer .EventDetailHeaderSectionContainer {
+  color: #1d1842;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+}
+.EventDetailSectionContainer .EventDetailsSection {
+  display: grid;
+  gap: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .EventDetailSectionContainer .EventDetailsSection {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .EventDetailSectionContainer .EventDetailsSection {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.EventDetailSectionContainer .EventDetailsSection .EventDetailSection {
+  display: grid;
+  padding: 20px;
+  align-items: center;
+  gap: 24px;
+  border-radius: 24px;
+  background: #efecfd;
+}
+.EventDetailSectionContainer .EventDetailsSection .EventDetailImageSection img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.EventDetailSectionContainer .EventDetailsSection .EventDetailedTextSection {
+  display: grid;
+  gap: 1rem;
+}
+.EventDetailSectionContainer .EventDetailsSection .EventDetailedHeaderSection {
+  color: #1d1842;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+}
+.EventDetailSectionContainer .EventDetailsSection .EventDetailedSubSection {
+  color: #5c5b68;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+.EventDetailSectionContainer .EventDetailsSection .EventDetailedDateAndLocationSection {
+  display: flex;
+  justify-content: space-between;
+  color: #1d1842;
+  font-family: Montserrat;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+}
+.EventDetailSectionContainer .EventDetailsSection .EventDetailedButtonSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.EventDetailSectionContainer .volunteerButton {
+  background: blue;
+}

@@ -1,33 +1,47 @@
 .programHeroSection {
+  // display: flex;
+  // // width: 1820px;
+  // /* padding: 160px 245px; */
+  // // padding: 100px 200px;
+
+  // align-items: center;
+  // gap: 40px;
+
   display: grid;
   padding: 100px 0px;
+  // padding: 200px 200px;
   align-items: flex-start;
   gap: 70px;
+  // justify-content: center;
   align-items: center;
-}
-.programHeroSection .programHeroImgSection img {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-@media screen and (min-width: 768px) {
-  .programHeroSection {
+
+  // margin-bottom: 100px !important;
+
+  .programHeroImgSection {
+    img {
+      object-fit: cover;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
     grid-template-columns: repeat(2, 1fr);
   }
-}
-.programHeroSection .programHeroTextSection {
-  display: grid;
-  gap: 1rem;
-}
-.programHeroSection img {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  .programHeroTextSection {
+    display: grid;
+    gap: 1rem;
+  }
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
 }
 
 .programHeroHeaderSection h2 {
   color: #1d1842;
   font-size: 3rem;
+
   font-family: Montserrat;
+
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -40,9 +54,11 @@
   font-style: normal;
   font-weight: 500;
   line-height: 32px;
+
   align-self: stretch;
 }
 
+/////////HOW WE HELP SECTION/////////
 .howWeHelpSection {
   width: 1920px;
   padding: 200px 100px;
@@ -55,6 +71,7 @@
 
 .howWeHelpSectionHeader {
   color: #1d1842;
+
   font-family: Montserrat;
   font-size: 20px;
   font-style: normal;
@@ -80,6 +97,7 @@
 
 .howWeHelpDetailSubSection {
   color: #5c5b68;
+
   font-family: Montserrat;
   font-size: 14px;
   font-style: normal;
@@ -87,6 +105,7 @@
   line-height: 24px;
 }
 
+//////////////OUR MISSION/////////////
 .ourMission {
   margin-bottom: 100px !important;
 }
@@ -97,23 +116,25 @@
   padding: calc(48px + 1rem) 1rem !important;
   color: #fff;
   margin: 100px !important;
-}
-.ourMissionsection .ourMissionsectionHeader {
-  font-size: calc(1rem + 4px);
-  font-weight: 600;
-  opacity: 0.5;
-  margin-bottom: 1rem;
-}
-.ourMissionsection .ourMissionSubSection {
-  font-size: 1rem;
-  font-weight: 800;
-}
-@media screen and (min-width: 768px) {
-  .ourMissionsection {
-    padding: calc(78px + 1rem) 8rem !important;
+
+  .ourMissionsectionHeader {
+    font-size: calc(1rem + 4px);
+    font-weight: 600;
+    opacity: 0.5;
+    margin-bottom: 1rem;
   }
-  .ourMissionsection .ourMissionSubSection {
-    font-size: 1.5rem;
+
+  .ourMissionSubSection {
+    font-size: 1rem;
     font-weight: 800;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: calc(78px + 1rem) 8rem !important;
+
+    .ourMissionSubSection {
+      font-size: 1.5rem;
+      font-weight: 800;
+    }
   }
 }

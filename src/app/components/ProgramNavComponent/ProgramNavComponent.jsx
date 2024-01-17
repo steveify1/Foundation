@@ -19,7 +19,7 @@ export default function ProgramNav() {
           </Link>
         </li>
         <li>
-          <Link href="/" className={styles.programNavLink}>
+          <Link href="/prison" className={styles.programNavLink}>
             <div className={styles.sectionName}>Prison Fair Programs</div>
             <div className={styles.programNavLinkImage}>
               {" "}
@@ -29,7 +29,7 @@ export default function ProgramNav() {
         </li>
 
         <li>
-          <Link href="/" className={styles.programNavLink}>
+          <Link href="/elderly" className={styles.programNavLink}>
             <div className={styles.sectionName}>Elderly Support Program </div>
             <div className={styles.programNavLinkImage}>
               <img src="images/heroImage.png" alt="" />
@@ -38,7 +38,7 @@ export default function ProgramNav() {
         </li>
 
         <li>
-          <Link href="/" className={styles.programNavLink}>
+          <Link href="/feeding" className={styles.programNavLink}>
             <div className={styles.sectionName}>
               Feed 100 Families for Christmas{" "}
             </div>

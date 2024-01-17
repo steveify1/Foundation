@@ -7,9 +7,9 @@ import Footer from "../Footer/Footer";
 import Highlight from "../Highlight/Highlight";
 import Event from "../Event/Event";
 
-import styles from "./GirlChildComponent.module.css";
+import styles from "./ElderlyPageComponent.module.css";
 
-export default function GirlChild() {
+export default function ElderlyPage() {
   return (
     <main>
       <div className={styles.programSection}>
@@ -18,17 +18,14 @@ export default function GirlChild() {
         <Container className={styles.programHeroSection}>
           <div className={styles.programHeroTextSection}>
             <div className={styles.programHeroHeaderSection}>
-              <h2>The girl child support Programs</h2>
+              <h2>Elderly Support Program</h2>
             </div>
             <div className={styles.programHeroSubSection}>
               <p>
-                Welcome to our Girl Child Support Program, where we believe in
-                empowering dreams and breaking barriers. Every girl deserves
-                access to education, healthcare, and opportunities for personal
-                growth. Through this initiative, we strive to create a world
-                where gender equality is not just a goal but a reality. Join us
-                in supporting and nurturing the potential of every girl, helping
-                them build a brighter future.
+                Step into the heart of our Elderly Support Program, where we are
+                dedicated to providing caring companionship, assistance, and
+                resources to enhance the lives of senior citizens in our
+                community.
               </p>
             </div>
             <div className={styles.programHeroButton}>
@@ -37,7 +34,7 @@ export default function GirlChild() {
             </div>
           </div>
           <div className={styles.programHeroImgSection}>
-            <img src="images/girl.png" />
+            <img src="images/elderly.png" />
           </div>
         </Container>
         {/* ////////////HOW WE HELP////////// */}
@@ -50,39 +47,39 @@ export default function GirlChild() {
               <div className={styles.howWeHelpDetailsSection}>
                 <div className={styles.howWeHelpDetail}>
                   <div className={styles.howWeHelpDetailHeader}>
-                    <h4>Education Advocacy</h4>
+                    <h4>Companionship Services</h4>
                   </div>
                   <div className={styles.howWeHelpDetailSubSection}>
                     <p>
-                      We advocate for and work towards ensuring that girls have
-                      equal access to education, promoting a future where
-                      knowledge becomes a powerful tool for empowerment.
+                      We offer companionship through home visits, social
+                      activities, and community events, fostering connections
+                      and reducing social isolation.
                     </p>
                   </div>
                 </div>
 
                 <div className={styles.howWeHelpDetail}>
                   <div className={styles.howWeHelpDetailHeader}>
-                    <h4>Education Advocacy</h4>
+                    <h4>Assistance Programs</h4>
                   </div>
                   <div className={styles.howWeHelpDetailSubSection}>
                     <p>
-                      We advocate for and work towards ensuring that girls have
-                      equal access to education, promoting a future where
-                      knowledge becomes a powerful tool for empowerment.
+                      Our initiatives include providing assistance with daily
+                      activities, healthcare support, and ensuring access to
+                      essential resources for the elderly.
                     </p>
                   </div>
                 </div>
 
                 <div className={styles.howWeHelpDetail}>
                   <div className={styles.howWeHelpDetailHeader}>
-                    <h4>Education Advocacy</h4>
+                    <h4>Advocacy for Senior Rights</h4>
                   </div>
                   <div className={styles.howWeHelpDetailSubSection}>
                     <p>
-                      We advocate for and work towards ensuring that girls have
-                      equal access to education, promoting a future where
-                      knowledge becomes a powerful tool for empowerment.
+                      We actively advocate for the rights of senior citizens,
+                      promoting policies that enhance their well-being and
+                      quality of life.
                     </p>
                   </div>
                 </div>
@@ -95,15 +92,14 @@ export default function GirlChild() {
           <div className={styles.ourMissionsection}>
             <div className={styles.ourMissionDetailsection}>
               <div className={styles.ourMissionsectionHeader}>
-                <h4>Together, Let&apos;s Empower Dreams</h4>
+                <h4>Join Us in Providing Caring Companionship</h4>
               </div>
               <div className={styles.ourMissionSubSection}>
                 <h2>
-                  The journey toward gender equality begins with supporting the
-                  dreams of every girl. Join us in creating a world where
-                  opportunities are limitless, and every girl can reach her full
-                  potential. Together, let&apos;s empower dreams and build a
-                  brighter future for all.
+                  Become a part of our mission to provide caring companionship
+                  and support to the elderly. Together, let&apos;s ensure that
+                  every senior citizen can age with dignity and continue to lead
+                  fulfilling lives.
                 </h2>
               </div>
             </div>
