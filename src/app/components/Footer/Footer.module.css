@@ -17,8 +17,9 @@
 .footerTopTierSection {
   display: grid;
   gap: 1rem;
-
-  @media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 768px) {
+  .footerTopTierSection {
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -50,12 +51,14 @@
 .footerBottomTierSection {
   display: grid;
   gap: calc(1rem + 8px);
-
-  @media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 768px) {
+  .footerBottomTierSection {
     grid-template-columns: repeat(2, 1fr);
   }
-
-  @media screen and (min-width: 1200px) {
+}
+@media screen and (min-width: 1200px) {
+  .footerBottomTierSection {
     grid-template-columns: repeat(4, 1fr);
   }
 }
@@ -100,7 +103,6 @@
 
 .SignUpDetailSubSection p {
   color: #5c5b68;
-
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -122,14 +124,13 @@
 .SignUpDetailEmailSection {
   display: grid;
   gap: 0.5rem;
-
-  .signUpButtonSection {
-    display: block;
-    button {
-      width: 100%;
-      display: block;
-    }
-  }
+}
+.SignUpDetailEmailSection .signUpButtonSection {
+  display: block;
+}
+.SignUpDetailEmailSection .signUpButtonSection button {
+  width: 100%;
+  display: block;
 }
 
 .SignUpDetailEmailSection input {

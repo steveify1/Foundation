@@ -24,7 +24,7 @@ export default function Nav() {
           </li>
         </ul>
         <div className={styles.navButtonSection}>
-          <Link href="/">
+          <Link href="/girl">
             {" "}
             <Button> Get Involved</Button>
           </Link>

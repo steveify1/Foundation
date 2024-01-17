@@ -1,5 +1,9 @@
 .aboutSectionHeader {
-  background: linear-gradient(rgba(29, 24, 66, 0.3) 0%, rgba(29, 24, 66, 0.3) 100%), url("../../../../public/images/AboutPageHeaderBackground.gif");
+  background: linear-gradient(
+      rgba(29, 24, 66, 0.3) 0%,
+      rgba(29, 24, 66, 0.3) 100%
+    ),
+    url("../../../../public/images/AboutPageHeaderBackground.gif");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -131,6 +135,7 @@
 }
 
 /* /////ABOUT OUR CEO///// */
+
 .aboutCeoSection {
   display: flex;
   width: 1920px;
@@ -142,6 +147,7 @@
 
 .aboutCeoHeaderSection {
   color: #1d1842;
+
   font-family: Montserrat;
   font-size: 34px;
   font-style: normal;

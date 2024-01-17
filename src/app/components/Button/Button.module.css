@@ -2,41 +2,37 @@
   border: none;
   cursor: pointer;
   color: #fff;
-
   padding: 18px 27px;
   background: #c65846;
   font-weight: 600;
   transition: all 0.5s ease;
   border-radius: 10px;
 }
-// .button  {
-//   color: white;
-//   text-decoration: none;
-//   font-size: 14px;
-// }
+
 .button:hover {
   opacity: 0.9;
-  // background-color: #d05e44;
-
   color: #fff;
 }
+
 .button.secondary {
   background: #efecfd;
-
   color: #d05e44;
   border: 1px solid #d05e44;
 }
+
 .button.secondary:hover {
   opacity: 0.9;
   background-color: #d05e44;
   color: #fff;
 }
+
 .button.primary {
   background: #efecfd;
   color: #d05e44;
   border: 1px solid #d05e44;
   border-radius: 45px;
 }
+
 .button.primary:hover {
   opacity: 0.9;
   background-color: #d05e44;
@@ -45,12 +41,11 @@
 
 .button.secondaryEvent {
   background: #d05e44;
-
   color: #d05e44;
   border: 1px solid #d05e44;
 }
+
 .button.secondaryEvent:hover {
   opacity: 0.9;
-  // background-color: #efecfd;
   color: #fff;
 }

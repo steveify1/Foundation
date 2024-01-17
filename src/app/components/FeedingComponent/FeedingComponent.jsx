@@ -7,9 +7,9 @@ import Footer from "../Footer/Footer";
 import Highlight from "../Highlight/Highlight";
 import Event from "../Event/Event";
 
-import styles from "./GirlChildComponent.module.css";
+import styles from "./FeedingComponent.module.css";
 
-export default function GirlChild() {
+export default function FeedingPage() {
   return (
     <main>
       <div className={styles.programSection}>
@@ -18,17 +18,14 @@ export default function GirlChild() {
         <Container className={styles.programHeroSection}>
           <div className={styles.programHeroTextSection}>
             <div className={styles.programHeroHeaderSection}>
-              <h2>The girl child support Programs</h2>
+              <h2>Feed 100 Families for Christmas</h2>
             </div>
             <div className={styles.programHeroSubSection}>
               <p>
-                Welcome to our Girl Child Support Program, where we believe in
-                empowering dreams and breaking barriers. Every girl deserves
-                access to education, healthcare, and opportunities for personal
-                growth. Through this initiative, we strive to create a world
-                where gender equality is not just a goal but a reality. Join us
-                in supporting and nurturing the potential of every girl, helping
-                them build a brighter future.
+                Welcome to our Feed 100 Families for Christmas program, where we
+                aim to spread joy and share love by providing festive meals and
+                essential groceries to families facing food insecurity during
+                the holiday season.
               </p>
             </div>
             <div className={styles.programHeroButton}>
@@ -37,7 +34,7 @@ export default function GirlChild() {
             </div>
           </div>
           <div className={styles.programHeroImgSection}>
-            <img src="images/girl.png" />
+            <img src="images/highlight1.png" />
           </div>
         </Container>
         {/* ////////////HOW WE HELP////////// */}
@@ -50,39 +47,39 @@ export default function GirlChild() {
               <div className={styles.howWeHelpDetailsSection}>
                 <div className={styles.howWeHelpDetail}>
                   <div className={styles.howWeHelpDetailHeader}>
-                    <h4>Education Advocacy</h4>
+                    <h4>Festive Meal Distribution</h4>
                   </div>
                   <div className={styles.howWeHelpDetailSubSection}>
                     <p>
-                      We advocate for and work towards ensuring that girls have
-                      equal access to education, promoting a future where
-                      knowledge becomes a powerful tool for empowerment.
+                      We provide festive meals and essential groceries to 100
+                      families, bringing warmth and joy to their homes during
+                      the holiday season.
                     </p>
                   </div>
                 </div>
 
                 <div className={styles.howWeHelpDetail}>
                   <div className={styles.howWeHelpDetailHeader}>
-                    <h4>Education Advocacy</h4>
+                    <h4>Community Engagement</h4>
                   </div>
                   <div className={styles.howWeHelpDetailSubSection}>
                     <p>
-                      We advocate for and work towards ensuring that girls have
-                      equal access to education, promoting a future where
-                      knowledge becomes a powerful tool for empowerment.
+                      We engage with the community to identify and reach out to
+                      families facing food insecurity, ensuring that our support
+                      reaches those who need it most.
                     </p>
                   </div>
                 </div>
 
                 <div className={styles.howWeHelpDetail}>
                   <div className={styles.howWeHelpDetailHeader}>
-                    <h4>Education Advocacy</h4>
+                    <h4>Volunteer Opportunities</h4>
                   </div>
                   <div className={styles.howWeHelpDetailSubSection}>
                     <p>
-                      We advocate for and work towards ensuring that girls have
-                      equal access to education, promoting a future where
-                      knowledge becomes a powerful tool for empowerment.
+                      Join us in spreading love and joy by volunteering to
+                      assist in the preparation and distribution of festive
+                      meals to families in need.
                     </p>
                   </div>
                 </div>
@@ -95,15 +92,14 @@ export default function GirlChild() {
           <div className={styles.ourMissionsection}>
             <div className={styles.ourMissionDetailsection}>
               <div className={styles.ourMissionsectionHeader}>
-                <h4>Together, Let&apos;s Empower Dreams</h4>
+                <h4>Join Us in Spreading Joy</h4>
               </div>
               <div className={styles.ourMissionSubSection}>
                 <h2>
-                  The journey toward gender equality begins with supporting the
-                  dreams of every girl. Join us in creating a world where
-                  opportunities are limitless, and every girl can reach her full
-                  potential. Together, let&apos;s empower dreams and build a
-                  brighter future for all.
+                  Be a part of our mission to spread joy and share love during
+                  the holiday season. Together, let&apo;s ensure that 100
+                  families can experience the warmth and celebration that the
+                  holidays bring.
                 </h2>
               </div>
             </div>
