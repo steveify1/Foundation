@@ -272,7 +272,7 @@ export default function Event() {
                   </Link>
                   <Link href="/">
                     {" "}
-                    <Button type={"secondaryEvent"}>Donate</Button>
+                    <Button>Donate</Button>
                   </Link>
                   <Link href="/">
                     {" "}
